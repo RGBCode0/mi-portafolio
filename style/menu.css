@@ -1,0 +1,129 @@
+
+.menu {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-fondo);
+    padding: 0px 20px;
+    text-transform: uppercase;
+    font-family: "roboto-medium", sans-serif;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s ease;
+    z-index: 2;
+  }
+  
+   /*contenedor del logo y el icono*/
+  .menu__logo, .menu__icono{
+    width: 130px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+  }
+  /*logo imagen*/
+  .menu__logo-img {
+    max-width: 100%;
+  }
+  /*icono imagen*/
+  .menu__icono-img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    filter: var(--color-invertir);
+  }
+  
+  /* Lista de navegación inicial */
+  .menu__lista {
+    display: flex;
+    position: absolute;
+    top: 100%; /* debajo del menú principal*/
+    right: 0;
+    width: 45%;
+    padding:10px 0;
+    margin-top: 6px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color-fondo-dark);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:transform, 0.3s;
+    pointer-events: none;
+  }
+  
+  .menu__item {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .menu__link {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--color-texto);
+  }
+  
+  .menu--scroll{
+    background-color: var(--color-fondo-dark);
+  }
+ 
+  
+  .mostrarMenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .iconoCambiarTema{
+    filter: var(--color-invertir);
+    cursor: pointer;
+  }
+
+ 
+  
+  /* Pantallas grandes: Lista horizontal y ocultar ícono */
+  @media (min-width: 768px) {
+    .menu{
+      padding: 0px 40px;
+    }
+    .menu__lista {
+      position: static; 
+      width: 100%;
+      flex-direction: row;
+      justify-content: end;
+      align-items: center;
+      padding:0;
+      margin: 0;
+      background-color: var(--gray-color);
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    
+    .menu__icono {
+        /* visibility: hidden; */
+        display: none;
+        
+    }
+     
+    
+    .menu__lista--scroll{
+       background-color: var(--primary-color-dark);
+    }
+
+    .menu__link--scroll{
+    color: var(--color-texto);
+    }
+    .menu__link{
+      transition: color 0.3s;
+    }
+    
+
+    .menu__link:hover {
+      color: var(--color-primario);
+    }
+    
+  }
+  

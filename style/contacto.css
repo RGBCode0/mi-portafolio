@@ -1,0 +1,56 @@
+.contacto {
+    scroll-margin-top: 100px;
+    padding: 2em 1em;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 0.625em;
+    background-color: var(--color-fondo-dark);
+    padding: 1.25em;
+    border-radius: 1.5em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #A8B2D1;
+  }
+  
+  .cajaTexto,
+  .areaTexto {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #778DA9;
+    border-radius: 0.5em;
+    background-color: white;
+  }
+  
+  .areaTexto {
+    height: 15.5em;
+    resize: vertical;
+  }
+  
+  .botonEnviar {
+    background-color: var(--color-secundario);
+    color: white;
+    padding: 0.75em 2.4375rem;
+    border-radius: 0.625em;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media (min-width: 768px) {
+    .botonEnviar:hover {
+      background-color: var(--color-secundario-dark);
+    }
+  }
+  
+
+  

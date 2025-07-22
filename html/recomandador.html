@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recomendador de Productos Médicos</title>
+  <link rel="stylesheet" href="../style/otherPages.css">
+</head>
+<body>
+ <div class="container">
+  <h1>🩺 Recomendador de Productos Médicos</h1>
+  <p>Sistema de recomendación web basada en reglas con python</p>
+  <img src="../images/recomendador.png" alt="Captura de la app recomendadora" />
+
+  <div class="section">
+    <h2>🧠 ¿Qué hace esta aplicación?</h2>
+    <p>
+      Esta aplicación ayuda a los usuarios a recibir recomendaciones de productos médicos (farmacéuticos o naturales)
+      en base al síntoma que presentan. Utiliza una lógica basada en reglas médicas en el backend y muestra el resultado
+      en una interfaz web simple e intuitiva.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>⚙️ ¿Cómo funciona?</h2>
+    <ul>
+      <li><strong>Backend:</strong> Desarrollado en <code>Python + Flask</code>. Contiene la lógica que decide qué producto sugerir.</li>
+      <li><strong>Frontend:</strong> Desarrollado con <code>HTML, CSS y JavaScript</code>. Permite al usuario seleccionar su síntoma y tipo de tratamiento.</li>
+      <li><strong>Comunicación:</strong> El frontend envía una solicitud <code>POST</code> al servidor Flask mediante <code>fetch()</code>.</li>
+      <li><strong>Respuesta:</strong> El servidor responde con el nombre e imagen del producto recomendado.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📦 Requisitos</h2>
+    <ul>
+      <li>Python 3.10 o superior</li>
+      <li>Navegador moderno (Chrome, Firefox, etc.)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🚀 Instalación rápida</h2>
+    <ol>
+      <li>Clona el repositorio: <code>git clone https://github.com/RaelRGB/recomendadorDeProductosMedicos</code></li>
+      <li>Entra a la carpeta <code>backend</code></li>
+      <li>Crea un entorno virtual:
+        <pre><code>python -m venv venv<br>venv\Scripts\activate  # Windows</code></pre>
+      </li>
+      <li>Instala las dependencias:
+        <pre><code>pip install -r requirements.txt</code></pre>
+      </li>
+      <li>Ejecuta el servidor:
+        <pre><code>python app.py</code></pre>
+      </li>
+      <li>Abre <code>frontend/index.html</code> en tu navegador</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <a class="descarga" href="https://github.com/RaelRGB/recomendadorDeProductosMedicos" target="_blank">🔗 Ver repositorio en GitHub</a>
+  </div>
+<footer>
+  Proyecto creado por Rael Gabriel Bautista · 2025
+</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rael Gabriel Bautista">
+    <meta name="keywords" content="Programador,Desarrollador Software">
+    <meta name="description" content="Página personal de Rael Gabriel Bautista. Proyectos, blog y contacto.">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Mi pagina Web</title>
+</head>
+
+<body>
+  
+  <nav class="menu">
+    <div class="menu__logo">
+      <img class="menu__logo-img" src="../images/Logo.png" alt="Logo">
+    </div>
+    <ul class="menu__lista">
+      <li class="menu__item"><a class="menu__link" href="#inicio">Inicio</a></li>
+      <li class="menu__item"><a class="menu__link" href="#sobre-mi">Sobre mí</a></li>
+      <li class="menu__item"><a class="menu__link" href="#proyectos">Proyectos</a></li>
+      <li class="menu__item"><a class="menu__link" href="#contacto">Contacto</a></li>
+      <li class="menu__item"><a class="menu__link"><img class="iconoCambiarTema" src="../images/cambiarModo.svg" alt="no se cargo"></a></li>
+    </ul>
+    <div class="menu__icono">
+      <img class="menu__icono-img" src="../images/iconoMenu.svg" alt="Icono del menú">
+    </div>
+  </nav>
+
+  <!-- Inicio -->
+   <div class="contenedor">
+<section id="inicio" class="inicio">
+    <img src="../images/perfil.jpg" alt="Foto de Rael Gabriel Bautista" class="inicio__imagen">
+    
+    <div class="inicio__informacion">
+      <h1 class="inicio__titulo">Hola, soy Rael Gabriel Bautista</h1>
+      <p class="inicio__descripcion">
+        Apasionado por la tecnología, el desarrollo de software y la creación de soluciones innovadoras. Me encanta aprender, compartir conocimiento y dar vida a ideas a través del código.
+        Explora mis proyectos… ¡y descubramos juntos hasta dónde podemos llegar!
+      </p>
+      <blockquote class="inicio__frase">
+        "Aprende, experimenta y programa tu propio camino."
+      </blockquote>
+      <div class="inicio__botones">
+        <a href="#proyectos" class="boton boton--primario">Ver mis proyectos</a>
+        <a href="#contacto" class="boton boton--secundario">Contáctame</a>
+      </div>
+      <div class="inicio__contRedes">
+        <a href="https://github.com/RGBCode0" target="_blank" rel="noopener noreferrer"><img class="inicio__red enlace1" src="../images/github.svg" alt="">  </a>
+        <a href="https://wa.me/9515925531" target="_blank" rel="noopener noreferrer"><img class="inicio__red" src="../images/wats.svg" alt="">  </a>
+        <a href="https://www.youtube.com/@RGBCodeOficial" target="_blank" rel="noopener noreferrer"><img class="inicio__red enlace2" src="../images/youtube.svg" alt="">  </a>
+        <a href="https://www.facebook.com/RgbCoder" target="_blank" rel="noopener noreferrer"><img class="inicio__red enlace4" src="../images/facebook.svg" alt="">  </a>
+        <a href="https://www.tiktok.com/@rgbcoder" target="_blank" rel="noopener noreferrer" ><img class="inicio__red enlace1" src="../images/tictok.svg" alt="">  </a>
+      </div>
+ </div>
+</section>
+
+
+  
+  <!-- Sobre mí -->
+
+  <section id="sobre-mi" class="sobre-mi">
+    <div class="sobre-mi__contenido">
+      <h2>Sobre mí</h2>
+      <p>Disfruto resolver desafíos mediante el pensamiento lógico y la creatividad, buscando siempre formas eficientes de hacer las cosas.
+      Actualmente, me encuentro perfeccionando mis habilidades y explorando nuevas herramientas que me permitan crecer tanto personal como profesionalmente.
+      Creo firmemente que la programación no es solo una herramienta, sino una forma de pensar: estructurada, curiosa y valiente frente a lo desconocido.
+      Mi meta es seguir creciendo y aprendiendo como desarrollador y colaborar en proyectos que generen impacto real.
+    </p>
+    </div>
+  
+    <div class="sobre-mi__contenedor">
+      <div class="sobre-mi__tarjeta">
+        <h3>Habilidades</h3>
+        <p>Java, JS, Python(Básico), PHP, HTML/CSS, React Native, Mysql, Git, Github,Ubuntu Server (Básico), VMs (máquinas virtuales), POO.</p>
+      </div>
+      <div class="sobre-mi__tarjeta">
+        <h3>Intereses</h3>
+        <p>Desarrollo web y móvil, Ciberseguridad, aprender algun idioma, tocar 
+          algun instrumento
+        </p>
+      </div>
+      <div class="sobre-mi__tarjeta">
+        <h3>Proyectos</h3>
+        <p>Sistema de Bitacoras, Simulación de casas inteligentes con Arduino, Sistema web de pedidos.</p>
+      </div>
+    </div>
+    
+   
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos">
+    <h2 class="titulo">Mis proyectos</h2>
+    <div class="proyectos__cont">
+   
+      <div class="proyecto">
+        <img src="../images/sistemaBitacora.png" alt="" class="proyecto__img">
+        <div class="proyecto__info">
+          <h3>Sistema Bitacora</h3>
+          <p>Permite realizar y gestionar registros de aprendizaje personal.
+          </p>
+          <div class="proyecto__info__contBotones">
+            <a href="https://github.com/RGBCode0/Sistema-Bitacora-java" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/github.svg" alt="">Github</a>
+            <a href="bitacora.html" class="proyecto__Boton" target="_blank" rel="noopener noreferrer"><img src="../images/vistaPrevia2.svg" alt="">Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <img src="../images/sistemaPedidos.png" alt="" class="proyecto__img">
+        <div class="proyecto__info">
+          <h3>Sistema Web de Pedidos</h3>
+          <p>Permite realizar pedidos de postres, comidas y bebidas desde cualquier dispositivo.
+          </p>
+          <div class="proyecto__info__contBotones">
+            <a href="https://github.com/RGBCode0/Sistema-Web-de-Pedidos" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/github.svg" alt="">Github</a>
+            <a href="webPedidos.html" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/vistaPrevia2.svg" alt="">Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <img src="../images/webGaleria.png" alt="" class="proyecto__img">
+        <div class="proyecto__info">
+          <h3>Galeria de Imagenes</h3>
+          <p> Dibujo creados con JavaScript y HTML5 Canvas con animación 
+          </p>
+          <div class="proyecto__info__contBotones">
+            <a href="https://github.com/RGBCode0/Galeria-Imagenes-Canvas" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/github.svg" alt="">Github</a>
+            <a href="https://rgbcode0.github.io/Galeria-Imagenes-Canvas/" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/vistaPrevia2.svg" alt="">Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proyecto">
+        <img src="../images/mecanografia.png" alt="" class="proyecto__img">
+        <div class="proyecto__info">
+          <h3>Prueba de Mecanografía</h3>
+          <p>Aplicación web interactiva para medir tu velocidad y precisión al escribir
+          </p>
+          <div class="proyecto__info__contBotones">
+            <a href="https://github.com/RGBCode0/prueba-macanografia" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/github.svg" alt="">Github</a>
+            <a href="https://rgbcode0.github.io/prueba-macanografia/" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/vistaPrevia2.svg" alt="">Preview</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="proyecto">
+        <img src="../images/recomendador.png" alt="" class="proyecto__img">
+        <div class="proyecto__info">
+          <h3>Recomendador de productos</h3>
+          <p>Sistema de recomendación de productos médicos basado en reglas
+          </p>
+          <div class="proyecto__info__contBotones">
+            <a href="https://github.com/RaelRGB/recomendadorDeProductosMedicos" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/github.svg" alt="">Github</a>
+            <a href="recomandador.html" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/vistaPrevia2.svg" alt="">Preview</a>
+          </div>
+        </div>
+      </div>
+  
+
+    <div class="proyecto">
+      <img src="../images/casaInteligente.jpg" alt="" class="proyecto__img">
+      <div class="proyecto__info">
+        <h3>Casa Inteligente</h3>
+        <p>Simulación de una casa Inteligente con Arduino 
+        </p>
+        <div class="proyecto__info__contBotones">
+          <a href="https://github.com/RGBCode0" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/github.svg" alt="">Github</a>
+          <a href="casaInteligente.html" target="_blank" rel="noopener noreferrer" class="proyecto__Boton"><img src="../images/vistaPrevia2.svg" alt="">Preview</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2 class="titulo contac">Contacto</h2>
+    <form class="formulario" action="https://formsubmit.co/raelacademia13@gmail.com" method="POST">
+      <input class="cajaTexto" type="text" name="name" placeholder="Tu nombre" required>
+      <input class="cajaTexto" type="email" name="email" placeholder="Tu correo" required>
+      <textarea class="areaTexto" name="message" placeholder="Tu mensaje" required></textarea>
+    
+      <!-- Redirección a la página de agradecimiento -->
+      <input type="hidden" name="_next" value="gracias.html">
+    
+      <!-- Desactiva captcha -->
+      <input type="hidden" name="_captcha" value="false">
+    
+      <!-- Campo antispam -->
+      <input type="text" name="_honey" style="display:none">
+    
+      <button class="botonEnviar" type="submit">Enviar</button>
+      <div class="inicio__contRedes">
+        <a href="https://github.com/RGBCode0" target="_blank" rel="noopener noreferrer"><img class="inicio__red enlace1" src="../images/github.svg" alt="">  </a>
+        <a href="https://wa.me/9515925531" target="_blank" rel="noopener noreferrer"><img class="inicio__red" src="../images/wats.svg" alt="">  </a>
+        <a href="https://www.youtube.com/@RGBCodeOficial" target="_blank" rel="noopener noreferrer"><img class="inicio__red enlace2" src="../images/youtube.svg" alt="">  </a>
+        <a href="https://www.facebook.com/RgbCoder" target="_blank" rel="noopener noreferrer"><img class="inicio__red enlace4" src="../images/facebook.svg" alt="">  </a>
+        <a href="https://www.tiktok.com/@rgbcoder" target="_blank" rel="noopener noreferrer" ><img class="inicio__red enlace1" src="../images/tictok.svg" alt="">  </a>
+      </div>
+    </form>
+
+  </section>
+  
+  
+
+</div>
+  <!-- Footer -->
+  <footer class="pie">
+    <p>© 2025 Rael Gabriel Bautista - Todos los derechos reservados.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
+</body>
+</html>

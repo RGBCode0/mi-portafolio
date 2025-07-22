@@ -1,0 +1,106 @@
+/* estilos-generales.css */
+
+:root {
+    --color-principal: #3498db;
+    --color-principal-hover: #2980b9;
+    --color-fondo: #0D1B2A;
+    --color-texto: #ffffff;
+    --color-titulo: #fdfdfdcf;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #283C52;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    color: var(--color-titulo);
+  }
+  
+  ul, ol {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  h1,h2,img,p,ul,ol{
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  a.descarga {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 14px 24px;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.descarga:hover {
+    background-color: var(--color-principal-hover);
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color:var(--color-titulo);
+  }
+  
+  code {
+    background: var(--color-fondo);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  
+  .enlace-normal{
+    color: var(--color-principal);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    a.descarga {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+
+  

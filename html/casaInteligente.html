@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casa Inteligente - Proyecto Arduino</title>
+  <link rel="stylesheet" href="../style/styleHouse.css" />
+</head>
+<body>
+  <header>
+    <h1>Proyecto: Casa Inteligente</h1>
+    <p>Simulación con Arduino Uno y App Inventor</p>
+  </header>
+
+  <main>
+    <section class="preview">
+      <h2>Descripción General</h2>
+      <p>
+        Este proyecto consiste en una maqueta de una casa inteligente, diseñada e implementada con un microcontrolador Arduino Uno y una aplicación móvil desarrollada con App Inventor. 
+        Se simula el acceso a una puerta mediante contraseña y el control de luces vía Bluetooth.
+      </p>
+    </section>
+
+    <section class="galeria">
+        <h2>Galería del Proyecto</h2>
+        <div class="imagenes">
+          <figure>
+            <img src="../images/casaMaqueta.jpg" alt="Maqueta de casa inteligente" />
+            <figcaption>Maqueta del sistema físico</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/casaApp.jpg" alt="App Inventor control" />
+            <figcaption>Interfaz de la app en App Inventor</figcaption>
+          </figure>
+          <figure>
+            <img src="../images/casaBluetooth.jpg" alt="Módulo Bluetooth HC-05" />
+            <figcaption>Módulo Bluetooth HC-05 conectado al Arduino</figcaption>
+          </figure>
+        </div>
+      </section>
+
+    <section class="objectives">
+      <h2>Objetivos Específicos</h2>
+      <ol>
+        <li>Diseñar un sistema de control para el acceso de una puerta que funcione mediante la introducción de una contraseña en un dispositivo móvil.</li>
+        <li>Implementar el encendido y apagado de luces mediante conexión inalámbrica utilizando un módulo de comunicación Bluetooth.</li>
+        <li>Integrar y programar los componentes del sistema, como el módulo de conexión y el servomotor para garantizar la interacción entre el dispositivo móvil y el Arduino.</li>
+      </ol>
+    </section>
+
+    <section class="detalle">
+      <h2>Desarrollo del Proyecto</h2>
+      <p>
+        Se desarrolló una aplicación sencilla en App Inventor que permite al usuario interactuar con el sistema. La aplicación incluye una interfaz para ingresar la contraseña del control de acceso y botones para encender y apagar las luces, asegurando una experiencia intuitiva.
+      </p>
+      <p>
+        Se programó el Arduino Uno para gestionar el servomotor que controla la cerradura y los pines encargados de las luces. Se hicieron pruebas individuales de cada componente para garantizar su funcionamiento.
+      </p>
+      <p>
+        Finalmente, se estableció la comunicación con el módulo Bluetooth HC-05, asegurando que las órdenes enviadas desde la aplicación se ejecutaran correctamente.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por Rael Gabriel Bautista | Proyecto Arduino</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.sobre-mi{
+    scroll-margin-top:100px;
+}
+.sobre-mi__contenido{
+    color: var(--color-texto);
+}
+.sobre-mi, .sobre-mi__contenedor{
+ flex-direction: column;
+ display: flex;
+ gap: 1.25em;
+
+}
+
+
+.sobre-mi__tarjeta{
+    flex: 1;
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-bottom: 3.125em;
+   
+}
+
+
+@media (min-width: 768px){
+    #sobre-mi{
+        font-size: 1.125rem;
+    }
+    .sobre-mi__contenedor{
+        flex-direction: row;
+        
+    }
+}
+

@@ -1,0 +1,43 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+font-family: "roboto-Light", sans-serif;
+max-width: 1400px;
+margin: 0 auto;
+background-color: var(--color-fondo);
+
+}
+
+.contenedor{
+    width: 93%;
+    margin: 0 auto;
+    
+}
+
+.sobre-mi,.proyectos,.contacto,.pie{
+ margin-top: 80px;
+ 
+}
+
+@media (max-width:768px) {
+    .contenedor{
+        width: 85%;
+        
+    }
+}
+
+
